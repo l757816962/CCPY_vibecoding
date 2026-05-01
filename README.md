@@ -542,16 +542,6 @@ python benchmarks\terminalbench_smoke.py
 - `Bash` 工具包含基础危险命令拦截，例如 `rm -rf /`、`shutdown`、`diskpart` 等。
 - 这不是沙箱环境。运行真实模型时，请在隔离目录、容器或临时仓库中测试。
 - 不要让模型处理未授权的敏感文件、凭据或生产环境命令。
-- 不要提交 `.env`、API Key、会话输出或任务输出中的敏感内容。
 
-## 与 Claude Code 的关系
 
-Claude-Code-Python 不是 Anthropic 官方 Claude Code，也不是逐字节复制实现。它是一个 Python 版本的工程化复刻，保留核心思想：
-
-- 工具 schema 驱动模型调用。
-- 多轮工具执行循环。
-- 严格 tool result 配对。
-- 保守并发调度。
-- Task/sub-agent 多代理协作。
-- Bash 与文件系统工具组合完成真实编程任务。
 
